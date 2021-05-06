@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --maroon: #61122f;
+	--orange: #f6b319;
+}
+
+body{
+    background-color: var(--maroon);
+}
+
+/* Navbar Styling */
+.navbar{
+    background-color: var(--orange);
+}
+
+.navbar-brand > img{
+    width: 60px;
+    height: 60px;
+}
+.navbar-brand > h1{
+    float: right;
+    margin-left: 10px;
+}
+
+.nav-link {
+    text-align: center;
+}
+.nav-link > img{
+    width: 20px;
+}
+
+main > div{
+    margin: 2rem 0px;
+}
+main > div.container > img{
+    width: 100%;
+    max-height: 550px;
+}
