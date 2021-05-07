@@ -7,11 +7,20 @@
 :root{
     --maroon: #61122f;
 	--orange: #f6b319;
+    --white: #ffffff;
+    --black: #222222;
+    --green: #75ac55;
+    
 }
 
 body{
     background-color: var(--maroon);
 }
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
 
 /* Navbar Styling */
 .navbar{
@@ -25,6 +34,7 @@ body{
 .navbar-brand > h1{
     float: right;
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 .nav-link {
@@ -36,8 +46,81 @@ body{
 
 main > div{
     margin: 2rem 0px;
+    box-shadow: 0 0 50px var(--maroon);
+    border: 2px solid var(--maroon);
 }
 main > div.container > img{
     width: 100%;
     max-height: 550px;
 }
+
+
+
+/* Catagories Section */
+section.catagories > div.container > div.row > div > a > div ,
+section.catagories > div.container > div.row > div > div{
+    position: relative;
+    border: 1px solid var(--black);
+    margin: 10px 0px;
+}
+
+section.catagories > div.container > div.row > div > a > div:hover ,
+section.catagories > div.container > div.row > div > div:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+section.catagories > div.container > div.row > div > a > div > img  ,
+section.catagories > div.container > div.row > div > div > iframe{
+    width: 100%;
+    min-height: 300px;
+}
+
+section.catagories > div.container > div.row > div > a > div > span ,
+section.catagories > div.container > div.row > div > div > a > span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    opacity: .8;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+/* Footer Code Start */
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 30px;
+}
+
+footer > div.container > div.row{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+div.address > p:nth-child(3){
+    color: var(--green);
+}
+
+div.note > p{
+    font-style: italic;
+}
+
+/* Media Quries */
+@media (max-width: 767px) {
+    .navbar-brand > h1{
+        margin-top: 10px;
+    }
+    footer > div.container > div.row > div{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
