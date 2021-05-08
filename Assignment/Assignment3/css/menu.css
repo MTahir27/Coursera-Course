@@ -1,0 +1,48 @@
+.container > h2, .container > p{
+    text-align: center;
+    color: var(--white);
+    margin: 30px;
+}
+
+.menu-items{
+    border: 1px solid var(--black);
+    position: relative;  
+    margin-bottom: 30px;
+}
+
+.menu-items:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+.menu-items > a > img{
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.menu-items > a > span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    opacity: .8;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+@media (max-width: 575.98px){
+    .menu-items{
+        width: 250px;
+        margin: auto auto 30px;
+
+    }
+
+}

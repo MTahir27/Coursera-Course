@@ -1,0 +1,48 @@
+.container{
+    color: var(--white);
+}
+.container > h2, .container > p{
+    text-align: center;
+    color: var(--white);
+    margin: 30px; 
+}
+
+.item{
+    margin-bottom: 30px;
+}
+
+.item-list{
+    position: relative;
+    margin-bottom: 20px;
+}
+.item-list > span{
+    background-color: var(--green);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 5px 20px;
+}
+.item-list > img{
+    width: 100%;
+    max-width: 250px;
+}
+
+.item-detail{
+    padding-right: 30px;
+}
+
+.item-detail > p{
+    text-align: justify;
+}
+
+
+@media (max-width: 575.98px){
+    .item{
+        width: 250px;
+        margin: auto auto 30px;
+    }
+
+}
+
+
+

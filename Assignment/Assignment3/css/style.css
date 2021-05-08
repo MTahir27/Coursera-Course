@@ -44,6 +44,10 @@ ul{
     width: 20px;
 }
 
+.nav-item:hover{
+    background-color: var(--maroon);
+}
+
 main > div{
     margin: 2rem 0px;
     box-shadow: 0 0 50px var(--maroon);
